@@ -8,3 +8,5 @@ SPACE_CADET_ENABLE = no
 CAPS_WORD_ENABLE = yes
 COMBO_ENABLE = yes
 LAYER_LOCK_ENABLE = yes
+REPEAT_KEY_ENABLE = yes
+SRC += features/casemodes.c
