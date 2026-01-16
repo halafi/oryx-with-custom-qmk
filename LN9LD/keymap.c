@@ -242,6 +242,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (record->event.pressed) {
         enable_xcase_with(KC_UNDS);
     }
+    return false;
     case ST_MACRO_0:
     if (record->event.pressed) {
       SEND_STRING(SS_LALT(SS_LCTL(SS_LGUI(SS_LSFT(SS_TAP(X_T)))))SS_DELAY(100)  SS_LGUI(SS_TAP(X_O))SS_DELAY(100)  SS_LALT(SS_LCTL(SS_LGUI(SS_LSFT(SS_TAP(X_O))))));
